@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url(fonts/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "TikTok Sans";
+    src: url(fonts/TikTokSans-VariableFont_opsz\,slnt\,wdth\,wght.ttf);
+}
+
+:root{
+    --background-color: rgb(51, 51, 51);
+    --primary-color: rgb(50, 110, 0);
+    --secondary-color: greenyellow;
+    --tertiary-color: rgb(201, 255, 157);
+    --link-color: rgb(110, 252, 216);
+    --text-hover: rgb(233, 233, 233);
+    --font-family: "TikTok Sans", sans-serif;
+    --h1-size: 4rem;
+    --h1-color: rgb(146, 248, 255);
+}
+
+h1{
+    font-size: var(--h1-size);
+    color: var(--h1-color);
+    text-shadow: 0 0 9px var(--secondary-color);
+
+}
+
+body {
+ background: var(--background-color);
+ color: var(--secondary-color);
+ text-shadow: 2px 2px 3px var(--primary-color);
+ -webkit-font-smoothing: antialiased;
+ padding: 20px;
+}
+
+body, input, button {
+ font-size: 1.5em;
+ font-family: var(--font-family);
+}
+
+button {
+ cursor: pointer;
+}
+
+a {
+ color: var(--link-color);
+ text-decoration: none;
+}
+
+article{
+    padding: 40px;
+}
+
+*::selection{
+ background-color: var(--primary-color);
+ color: var(--text-hover);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header > nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#contact > ul >li{
+    list-style-type: none;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
