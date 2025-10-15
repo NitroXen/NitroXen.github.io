@@ -148,6 +148,37 @@ div>p{
     filter: drop-shadow(0 0 10px var(--secondary-color));
     border-radius: 50px;
 }
+svg{
+    width: 50px;
+    height: 50px;
+}
+
+#aboutus .row{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.skill-card{
+    width: 250px;
+    border: 2px solid var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.skill-card:active{
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+}
 
 @media (max-width: 500px) {
     header{
