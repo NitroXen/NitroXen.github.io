@@ -180,6 +180,35 @@ svg{
     box-shadow: 0 0 10px var(--shadow-color);
 }
 
+.text:hover{
+    color: cyan;
+}
+
+
+.glitch:hover{
+    animation: glitch 1s step-start infinite;
+}
+@keyframes glitch {
+    0% {
+      transform: translate(0, 0);
+    }
+    20% {
+      transform: translate(-3px, 3px);
+    }
+    40% {
+      transform: translate(-3px, -3px);
+    }
+    60% {
+      transform: translate(3px, 3px);
+    }
+    80% {
+      transform: translate(3px, -3px);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
+
 @media (max-width: 500px) {
     header{
         display: flex;
