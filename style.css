@@ -79,15 +79,7 @@ a {
     border-radius: 50px;
     margin: 20px;
 }
-#projects > article:hover{
-    background-color: var(--secondary-color);
-    color: var(--background-color);
-    box-shadow: 0 0 10px var(--shadow-color);
-    a{
-        color:rgb(0, 136, 68);
-    }
 
-}
 *::selection{
  background-color: var(--primary-color);
  color: var(--text-hover);
@@ -166,7 +158,6 @@ svg{
     width: 250px;
     border: 2px solid var(--secondary-color);
     padding: 10px;
-    border-radius: 10px;
     margin: 10px;
     text-align: center;
     display: flex;
@@ -174,10 +165,18 @@ svg{
     gap: 10px;
 }
 
-.skill-card:active{
+.hover:hover{
     background-color: var(--secondary-color);
     color: var(--background-color);
     box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.skill-card:nth-child(odd){
+    border-radius: 40px 0 40px 0;
+}
+
+.skill-card:nth-child(even){
+    border-radius: 0 40px 0 40px;
 }
 
 .text:hover{
