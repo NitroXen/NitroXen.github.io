@@ -6,83 +6,77 @@
 }
 
 @font-face {
-    font-family: "Rubik";
-    src: url(fonts/Rubik-VariableFont_wght.ttf);
+  font-family: "Rubik";
+  src: url(fonts/Rubik-VariableFont_wght.ttf);
 }
 
-@font-face {
-    font-family: "TikTok Sans";
-    src: url(fonts/TikTokSans-VariableFont_opsz\,slnt\,wdth\,wght.ttf);
+:root {
+  --background-color: rgb(51, 51, 51);
+  --primary-color: rgb(50, 110, 0);
+  --secondary-color: greenyellow;
+  --tertiary-color: rgb(201, 255, 157);
+  --shadow-color: rgb(255, 252, 89);
+  --link-color: rgb(110, 252, 216);
+  --text-hover: rgb(233, 233, 233);
+  --font-family: "Rubik", sans-serif;
+  --h1-size: 4rem;
+  --h1-color: rgb(146, 248, 255);
 }
 
-:root{
-    --background-color: rgb(51, 51, 51);
-    --primary-color: rgb(50, 110, 0);
-    --secondary-color: greenyellow;
-    --tertiary-color: rgb(201, 255, 157);
-    --shadow-color: rgb(255, 252, 89);
-    --link-color: rgb(110, 252, 216);
-    --text-hover: rgb(233, 233, 233);
-    --font-family: "TikTok Sans", sans-serif;
-    --h1-size: 4rem;
-    --h1-color: rgb(146, 248, 255);
-}
-
-h1{
-    font-size: var(--h1-size);
-    color: var(--h1-color);
-    text-shadow: 0 0 9px var(--secondary-color);
-
+h1 {
+  font-size: var(--h1-size);
+  color: var(--h1-color);
+  text-shadow: 0 0 9px var(--secondary-color);
 }
 
 body {
- background: var(--background-color);
- color: var(--secondary-color);
- text-shadow: 2px 2px 3px var(--primary-color);
- -webkit-font-smoothing: antialiased;
- padding: 40px;
+  background: var(--background-color);
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 3px var(--primary-color);
+  -webkit-font-smoothing: antialiased;
+  padding: 40px;
 }
 
-body, input, button {
- font-size: 1.5em;
- font-family: var(--font-family);
+body,
+input,
+button {
+  font-size: 1.5em;
+  font-family: var(--font-family);
 }
 
 button {
- cursor: pointer;
+  cursor: pointer;
 }
 
-
-nav > a{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
+nav > a {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 a {
- color: var(--link-color);
- text-decoration: none;
+  color: var(--link-color);
+  text-decoration: none;
 }
 
-#projects :not(h2){
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex-wrap: wrap;
-    align-content: space-between;
-    text-align: center;
+#projects :not(h2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  text-align: center;
 }
 
-#projects > article{
-    padding: 40px;
-    border: 3px solid var(--secondary-color);
-    border-radius: 50px;
-    margin: 20px;
+#projects > article {
+  padding: 40px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 50px;
+  margin: 20px;
 }
 
-*::selection{
- background-color: var(--primary-color);
- color: var(--text-hover);
+*::selection {
+  background-color: var(--primary-color);
+  color: var(--text-hover);
 }
 
 /* ----------------------------------------------
@@ -92,126 +86,195 @@ a {
   Twitter: @xsgames_
 ---------------------------------------------- */
 
-img{animation:scale-up-bottom 0.6s; }
-@keyframes scale-up-bottom{0%{transform:scale(.4);transform-origin:center bottom}100%{transform:scale(1);transform-origin:center bottom}}
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+img {
+  animation: scale-up-bottom 0.6s;
+}
+@keyframes scale-up-bottom {
+  0% {
+    transform: scale(0.4);
+    transform-origin: center bottom;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: center bottom;
+  }
 }
 
-header > nav{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-#contact > ul >li{
-    list-style-type: none;
-    margin-right: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+header > nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-
-div>p{
-    padding: 40px;
+#contact > ul > li {
+  list-style-type: none;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#aboutus, #aboutus > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
+div > p {
+  padding: 40px;
 }
 
-.footer-map{
-    border: 2px solid var(--secondary-color);
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
-    text-align: center;
-
+#aboutus,
+#aboutus > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
 }
 
-.shadow-image{
-    filter: drop-shadow(0 0 10px var(--secondary-color));
-    border-radius: 50px;
-}
-svg{
-    width: 50px;
-    height: 50px;
-}
-
-#aboutus .row{
-    padding: 0 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-
+.footer-map {
+  border: 2px solid var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
 }
 
-.skill-card{
-    width: 250px;
-    border: 2px solid var(--secondary-color);
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.shadow-image {
+  filter: drop-shadow(0 0 10px var(--secondary-color));
+  border-radius: 50px;
+}
+svg {
+  width: 50px;
+  height: 50px;
 }
 
-.hover:hover{
+#aboutus .row {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-card {
+  width: 250px;
+  border: 2px solid var(--secondary-color);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.hover:hover {
+  /*
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  box-shadow: 0 0 10px var(--shadow-color);*/
+  animation: back-effect 3s linear infinite;
+}
+
+.skill-card:nth-child(odd) {
+  border-radius: 40px 0 40px 0;
+}
+
+.skill-card:nth-child(even) {
+  border-radius: 0 40px 0 40px;
+}
+
+.text:hover {
+  color: cyan;
+}
+
+.glitch:hover {
+  animation: glitch 1s step-start infinite;
+}
+
+@keyframes back-effect {
+  0% {
+    background-color: var(---background-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+  }
+  50% {
     background-color: var(--secondary-color);
     color: var(--background-color);
     box-shadow: 0 0 10px var(--shadow-color);
-}
-
-.skill-card:nth-child(odd){
-    border-radius: 40px 0 40px 0;
-}
-
-.skill-card:nth-child(even){
-    border-radius: 0 40px 0 40px;
-}
-
-.text:hover{
-    color: cyan;
-}
-
-
-.glitch:hover{
-    animation: glitch 1s step-start infinite;
-}
-@keyframes glitch {
-    0% {
-      transform: translate(0, 0);
-    }
-    20% {
-      transform: translate(-3px, 3px);
-    }
-    40% {
-      transform: translate(-3px, -3px);
-    }
-    60% {
-      transform: translate(3px, 3px);
-    }
-    80% {
-      transform: translate(3px, -3px);
-    }
-    to {
-      transform: translate(0, 0);
-    }
   }
+  100% {
+    background-color: var(--bakcground-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+  }
+}
+/*
+.effect {
+  width: auto;
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--secondary-color);
+}
+
+.effect:hover {
+  animation: background-cool 5s linear none;
+}
+
+@keyframes background-cool {
+  0% {
+    height: 0;
+  }
+  25% {
+    height: 25%;
+  }
+  50% {
+    height: 50%;
+  }
+  75% {
+    height: 75%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+*/
+@keyframes glitch {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-3px, 3px);
+  }
+  40% {
+    transform: translate(-3px, -3px);
+  }
+  60% {
+    transform: translate(3px, 3px);
+  }
+  80% {
+    transform: translate(3px, -3px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
 
 @media (max-width: 500px) {
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .skill-card {
+    width: 130px;
+    font-size: 0.8rem;
+  }
+
+  svg {
+    visibility: hidden;
+  }
 }
