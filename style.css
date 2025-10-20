@@ -40,54 +40,97 @@ body {
 body,
 input,
 button {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: var(--font-family);
 }
-.aboutus__text {
-  display: flex;
-  flex-direction: row-reverse;
-  align-content: center;
-  justify-content: space-around;
-}
-
-.aboutus__text .glitch {
-  width: 50%;
-
-}
-
-.aboutus__text img {
-  width: auto;
-}
-
-button {
+button{
   cursor: pointer;
 }
+
+
+.svg{ width: 50px; height: 50px;}
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+    padding-bottom: 100px;
 }
-nav > ul {
+
+.header__title{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__item--active{
+  display: flex;
+  align-items: end;
+  position: relative;  
+}
+
+.menu__item--active::after{
+  content: '';
+  position:absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 0;
+  background-color: var(--secondary-color);
+}
+.menu__item--active:hover::after{
+  transition: all 0.7s ease;
+  height: 5px;
+}
+
+.main__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+img.about__me {
+  animation: scale-up-bottom 1s;
+}
+
+.shadow-image {
+  filter: drop-shadow(0 0 10px var(--secondary-color));
+  border-radius: 25px;
+}
+
+.about__text {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  list-style: none;
+  align-content: center;
+  justify-content: space-around;
+  width: 100%;
 }
+
 a {
   color: var(--link-color);
   text-decoration: none;
 }
 
-#projects :not(h2) {
+.main__proyectos{
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex-wrap: wrap;
   align-content: space-between;
-  text-align: center;
+  text-align: start;
 }
 
-#projects > article {
+.proyectos__listado{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+}
+
+.listado__item{
+  background-color: var(--background-color);
   padding: 40px;
   border: 3px solid var(--secondary-color);
   border-radius: 50px;
@@ -106,9 +149,7 @@ a {
   Twitter: @xsgames_
 ---------------------------------------------- */
 
-img {
-  animation: scale-up-bottom 5s;
-}
+
 @keyframes scale-up-bottom {
   0% {
     transform: scale(0.4);
@@ -143,39 +184,20 @@ div > p {
   padding: 40px;
 }
 
-#aboutus,
-#aboutus > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-}
 
-.footer-map {
-  border: 2px solid var(--secondary-color);
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px;
-  text-align: center;
-}
 
-.shadow-image {
-  filter: drop-shadow(0 0 10px var(--secondary-color));
-  border-radius: 50px;
-}
-svg {
-  width: 50px;
-  height: 50px;
-}
 
-#aboutus .row {
+
+.about__skills {
   padding: 0 15px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
+
+
 
 .skill-card {
   width: 250px;
@@ -210,6 +232,36 @@ svg {
 
 .glitch:hover {
   animation: glitch 1s step-start infinite;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact__row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.contact__links{
+  border: 2px solid var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer p{
+  text-align: center;
+  padding: 10px;
 }
 
 @keyframes back-effect {
@@ -252,30 +304,24 @@ svg {
 }
 
 @media (max-width: 468px) {
-  header {
-    display: flex;
+  .header {
     flex-direction: column;
+
   }
 
-  nav ul {
-    flex-direction: column;
+  .header__title {
+    text-align: center;
   }
-  .aboutus__text {
-    flex-direction: column;
-  }
-  .aboutus__text .glitch {
-    width: auto;
-  }
-  .aboutus__text img {
-    width: auto;
-  }
-  .skill-card {
-    width: 50%;
-    font-size: 1rem;
 
-    svg{
-      display:none;
-      visibility: hidden;
-    }
+  .about__text{
+    flex-direction: column;
+  }
+  .about__text > .glitch{
+    text-align: center;
+    padding: none;
+  }
+
+  .contact__row{
+    flex-direction: column;
   }
 }
