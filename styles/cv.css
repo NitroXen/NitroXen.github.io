@@ -1,0 +1,77 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* font face */
+@font-face {
+    font-family: TikTokSans;
+    src: url(fonts/TikTokSans-VariableFont.ttf);
+}
+
+
+/* Root */
+
+html {
+  font-size: 1rem;
+}
+
+body {
+ background: white;
+ color: black;
+
+ display: grid;
+ grid-template-areas: "aside main";
+ grid-template-columns: 270px 700px;
+}
+
+body, input, button {
+ font-family: TikTokSans,'sans-serif';
+}
+
+button {
+ cursor: pointer;
+}
+
+img{
+    width: 130px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #aedfff;
+    padding: 1rem;
+}
+
+main{
+    grid-area: main;
+    padding: 1rem;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.bold{
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+}
+h2{
+    color:#005085
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        grid-template-areas: "main","aside";
+        grid-template-columns: 1fr;
+    }
+
+}
