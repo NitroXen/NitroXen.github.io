@@ -72,6 +72,13 @@ h2{
     body{
         grid-template-areas: "main","aside";
         grid-template-columns: 1fr;
+        font-size: .7em;
     }
 
+}
+@media print {
+    body{
+        font-size: 2em;
+    }
+    
 }
