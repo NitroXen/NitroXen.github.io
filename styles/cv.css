@@ -9,6 +9,7 @@
 /* font face */
 @font-face {
     font-family: TikTokSans;
+    font-display: auto;
     src: url(fonts/TikTokSans-VariableFont.ttf);
 }
 
@@ -37,7 +38,7 @@ button {
 }
 
 img{
-    width: 130px;
+    width: 110px;
 }
 
 aside{

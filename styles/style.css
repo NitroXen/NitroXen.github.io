@@ -71,6 +71,9 @@ header{
   flex-wrap: wrap;
 }
 
+.text-black{
+  color: black;
+}
 .main__section--home{
   align-items: center;
   justify-content: center;
