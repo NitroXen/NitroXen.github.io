@@ -74,6 +74,15 @@ header{
 .text-black{
   color: black;
 }
+
+.main__section--title{
+  text-align: center;
+  h1{
+      margin-block: 0.67em;
+      font-size: 2em;
+  }
+}
+
 .main__section--home{
   align-items: center;
   justify-content: center;
