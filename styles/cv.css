@@ -8,11 +8,10 @@
 
 /* font face */
 @font-face {
-    font-family: TikTokSans;
-    font-display: auto;
-    src: url(fonts/TikTokSans-VariableFont.ttf);
+  font-family: TikTokSans;
+  font-display: auto;
+  src: url(fonts/TikTokSans-VariableFont.ttf);
 }
-
 
 /* Root */
 
@@ -21,65 +20,65 @@ html {
 }
 
 body {
- background: white;
- color: black;
+  background: white;
+  color: black;
 
- display: grid;
- grid-template-areas: "aside main";
- grid-template-columns: 270px 700px;
+  display: grid;
+  grid-template-areas: "aside main";
+  grid-template-columns: 270px 700px;
 }
 
-body, input, button {
- font-family: TikTokSans,'sans-serif';
+body,
+input,
+button {
+  font-family: TikTokSans, "sans-serif";
 }
 
 button {
- cursor: pointer;
+  cursor: pointer;
 }
 
-img{
-    width: 110px;
+img {
+  width: 110px;
 }
 
-aside{
-    grid-area: aside;
-    background-color: #aedfff;
-    padding: 1rem;
+aside {
+  grid-area: aside;
+  background-color: #aedfff;
+  padding: 1rem;
 }
 
-main{
-    grid-area: main;
-    padding: 1rem;
+main {
+  grid-area: main;
+  padding: 1rem;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: space-between;
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
-.bold{
-    font-weight: bold;
+.bold {
+  font-weight: bold;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
-h2{
-    color:#005085
+h2 {
+  color: #005085;
 }
 
 @media screen and (max-width: 600px) {
-    body{
-        grid-template-areas: "main","aside";
-        grid-template-columns: 1fr;
-        font-size: .7em;
-    }
-
+  body {
+    grid-template-areas: "main", "aside";
+    grid-template-columns: 1fr;
+    font-size: 0.5em;
+  }
 }
 @media print {
-    body{
-        font-size: 2em;
-    }
-    
+  body {
+    font-size: 2em;
+  }
 }

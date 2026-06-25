@@ -40,7 +40,7 @@ button {
 }
 
 /* Header */
-header{
+header {
   padding: 13px;
 }
 .header__nav {
@@ -51,83 +51,88 @@ header{
   margin-top: 10px;
 }
 
-.main__section{
-  display:flex;
+.main__section {
+  display: flex;
   padding: 30px;
 }
-.home__img{
-  width:75%;
+.home__img {
+  width: 75%;
 }
 
-.backtheme{
+.backtheme {
   background-color: white;
   padding: 10px;
   border-radius: 30px;
 }
 
-.container{
+.container {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.text-black{
+.text-black {
   color: black;
 }
 
-.main__section--title{
+.main__section--title {
   text-align: center;
-  h1{
-      margin-block: 0.67em;
-      font-size: 2em;
+  h1 {
+    margin-block: 0.67em;
+    font-size: 2em;
   }
 }
 
-.main__section--home{
+.main__section--home {
   align-items: center;
   justify-content: center;
 }
 
-.main__section--about{
+.main__section--about {
   flex-direction: column;
   align-items: flex-start;
 }
-.main__section--skills{
+.main__section--skills {
   flex-direction: column;
 
-  ul{
+  ul {
     list-style: none;
     width: 100%;
-      align-items: center;
-      gap: 50px;
-    
+    align-items: center;
+    gap: 50px;
   }
 }
 
-a{
+a {
   text-decoration: none;
   color: yellow;
   text-shadow: 2px 2px 3px yellowgreen;
   font-weight: bold;
 }
 
-.main__section--projects{
+.main__section--projects {
   flex-direction: column;
   align-items: center;
 }
 
-.main__section--contact{
+.main__section--contact {
   flex-direction: column;
   align-items: center;
 }
 
-.contact__container{
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact__container {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.footer__created{
+.footer__created {
   text-align: center;
   padding: 10px;
 }
