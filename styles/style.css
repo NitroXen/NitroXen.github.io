@@ -57,12 +57,27 @@ header {
 }
 .home__img {
   width: 75%;
+  mask-image: linear-gradient(black 75%, transparent 100%);
 }
 
 .backtheme {
   background-color: white;
   padding: 10px;
   border-radius: 30px;
+  transition: 1s ease-in-out;
+}
+
+.goldentheme {
+  background-color: gold;
+  padding: 10px;
+  border-radius: 30px;
+  transition: 1s ease-in-out;
+}
+
+.backtheme:hover,
+.goldentheme:hover {
+  background-color: #ff7171;
+  color: white;
 }
 
 .container {
@@ -103,6 +118,13 @@ header {
   }
 }
 
+.lista {
+  margin-left: 20px;
+}
+
+.globo {
+  width: 55%;
+}
 a {
   text-decoration: none;
   color: yellow;
@@ -151,5 +173,8 @@ a {
 
   .contact__container {
     flex-direction: column;
+  }
+  .globo {
+    width: 90%;
   }
 }

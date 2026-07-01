@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/ayudante.css" />
   </head>
   <body>
     <!-- Header -->
@@ -48,7 +49,7 @@
           <h2 id="subtitle">Desarrollador Multiplataforma y diseñador web</h2>
           <div class="container">
             <p class="text-black backtheme">Open To Work</p>
-            <p class="nes-btn is-warning">100% IA Free</p>
+            <p class="text-black goldentheme">Portfolio Web 100% IA Free</p>
           </div>
         </div>
       </section>
@@ -56,21 +57,32 @@
       <!-- Main Section About -->
       <section class="main__section--about main__section" id="about">
         <h3 id="aboutTitle">Sobre Mi</h3>
-        <p class="backtheme text-black" id="aboutText">
-          Me llamo Ruben y soy desarrollador de software con interes en los
+        <div class="backtheme text-black" id="aboutText">
+          Me llamo Ruben y soy desarrollador de software con interés en los
           juegos y en Android <br />
           <br />
-          Tengo el titulo de Sistemas Microinformaticos y Redes en el IES Monte
-          da vila y tengo tambien el titulo de Desarrollo de Aplicaciones
-          Multiplataforma en IES Chan do Monte. Ahora mismo, estoy en un curso
-          de Diseño Web para reciclarme y volver al diseño de moviles con mas
-          fuerza. <br />
+          Mis Estudios son:
+          <ul class="nes-list is-disc lista">
+            <li>Tecnico Medio de Sistemas Microinformaticos y Redes</li>
+            <li>
+              Tecnico Superior de Desarrollo de Aplicaciones Multiplataforma
+            </li>
+            <li>Curso de Confección y Publicación de Páginas Web</li>
+          </ul>
           <br />
-          En mi tiempo libre, me gusta jugar videojuegos y ajedrez y aprender
-          cosas nuevas para aplicarlas al trabajo. <br />
+          Mis Intereses son:
+          <ul class="nes-list is-disc lista">
+            <li>Videojuegos</li>
+            <li>Desarrollo Mobile</li>
+            <li>Desarrollo Web</li>
+          </ul>
+
           <br />
-          Si quieres saber mas sobre mi, puedes mirar mi CV.
-        </p>
+          En mi tiempo libre, me gusta aprender cosas nuevas para aplicarlas al
+          trabajo, <br />
+          <br />
+          Si quieres saber más sobre mi, puedes mirar mi CV
+        </div>
         <div class="main__section__info">
           <a
             href="./cv.html"
@@ -104,16 +116,6 @@
           </li>
           <li>
             <a href="#" class="nes-badge">
-              <span class="is-primary">Java</span>
-            </a>
-            <div class="skills__list--item">
-              <i class="nes-icon is-large star"></i>
-              <i class="nes-icon is-large star"></i>
-              <i class="nes-icon is-large star is-transparent"></i>
-            </div>
-          </li>
-          <li>
-            <a href="#" class="nes-badge">
               <span class="is-primary">JavaScript</span>
             </a>
             <div class="skills__list--item">
@@ -124,14 +126,25 @@
           </li>
           <li>
             <a href="#" class="nes-badge">
-              <span class="is-primary">Astro</span>
+              <span class="is-primary">React</span>
             </a>
             <div class="skills__list--item">
               <i class="nes-icon is-large star"></i>
+              <i class="nes-icon is-large star"></i>
               <i class="nes-icon is-large star is-half"></i>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="nes-badge">
+              <span class="is-primary">Java</span>
+            </a>
+            <div class="skills__list--item">
+              <i class="nes-icon is-large star"></i>
+              <i class="nes-icon is-large star"></i>
               <i class="nes-icon is-large star is-transparent"></i>
             </div>
           </li>
+
           <li>
             <a href="#" class="nes-badge">
               <span class="is-primary">Git</span>
@@ -154,12 +167,12 @@
           </li>
           <li>
             <a href="#" class="nes-badge">
-              <span class="is-primary">React</span>
+              <span class="is-primary">Astro</span>
             </a>
             <div class="skills__list--item">
               <i class="nes-icon is-large star"></i>
-              <i class="nes-icon is-large star"></i>
               <i class="nes-icon is-large star is-half"></i>
+              <i class="nes-icon is-large star is-transparent"></i>
             </div>
           </li>
         </ul>
@@ -168,19 +181,55 @@
       <section class="main__section--projects main__section" id="projects">
         <h3 id="projectsTitle">Mis Proyectos</h3>
 
-        <div class="nes-balloon from-right is-dark">
-          <p>Mi portfolio</p>
-          <a href="https://github.com/NitroXen/NitroXen.github.io" class=""
+        <div class="nes-balloon from-right is-dark globo">
+          <p>Big Bang Battle</p>
+          <a href="https://github.com/NitroXen/BigBandBattle" target="_blank"
             >Github</a
           >
-          <p>Ahora estas aqui</p>
+          <a href="https://bigbangbattle.netlify.app/" target="_blank">Web</a>
+          <p>
+            Un proyecto para mejorar mis habilidades con JavaScript con el
+            tipico juego de piedra papel tijera y lagarto spock
+          </p>
         </div>
-        <div class="nes-balloon from-right is-dark">
+        <!-- <div class="nes-balloon from-right is-dark globo">
           <p>Colegas gamers WebComic</p>
           <a href="https://github.com/NitroXen/ColegasGamersWebComic">Github</a>
           <p>Aun esta en construccion</p>
+        </div> -->
+        <div class="nes-balloon from-right is-dark globo">
+          <p>Proyecto final Curso diseño web</p>
+          <a href="https://github.com/NitroXen/ExamenM3-Rub">Github</a>
+          <a
+            href="https://examenm3rub.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >web</a
+          >
+          <p>
+            Una version del Creator Studio de Apple para el curso de diseño web
+          </p>
         </div>
-        <div class="nes-balloon from-right is-dark">
+        <div class="nes-balloon is-dark from-right globo">
+          <p>Ejercicio de publicacion de concierto</p>
+          <a
+            href="https://github.com/NitroXen/Ejercicio80"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+          <a
+            href="https://nitroxen.github.io/Ejercicio80/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >web</a
+          >
+          <p>
+            Recreando una pagina de reserva de tickets para el Gozo Festival
+            2026
+          </p>
+        </div>
+        <div class="nes-balloon from-right is-dark globo">
           <p>Continuara...</p>
         </div>
       </section>
@@ -203,13 +252,7 @@
           >
             <i class="nes-icon linkedin is-large"></i>
           </a>
-          <a
-            href="https://www.instagram.com/nitroxen_games/"
-            target="_blank"
-            aria-label="Mi Instagram"
-          >
-            <i class="nes-icon instagram is-large"></i>
-          </a>
+
           <a
             href="mailto:rubpifedev@outlook.com"
             target="_blank"
@@ -217,18 +260,37 @@
           >
             <i class="nes-icon gmail is-large"></i>
           </a>
-          <a href="mobile:+34697485734" aria-label="Mi Whatsapp">
-            <i class="nes-icon whatsapp is-large"></i>
-          </a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__created">
         <p>Creado con ❤️ por Rubén Piñerio Fernández</p>
-        <p class="text-black">si lees esto es porque te gusta mi portfolio</p>
+        <p class="text-warning">si lees esto es porque te gusta mi portfolio</p>
       </div>
     </footer>
+    <!-- Ayudante -->
+    <div class="ayudante">
+      <div class="nes-balloon from-right is-dark">
+        <p>👾</p>
+      </div>
+    </div>
+    <div class="nes-balloon is-dark from-right note">
+      <div id="tres-raya">
+        <button class="game"></button>
+        <button class="game"></button>
+        <button class="game"></button>
+        <button class="game"></button>
+        <button class="game"></button>
+        <button class="game"></button>
+        <button class="game"></button>
+        <button class="game"></button>
+        <button class="game"></button>
+      </div>
+      <p id="turn"></p>
+      <button id="reboot">Reiniciar</button>
+    </div>
     <script src="js/script.js"></script>
+    <script src="js/ayudante.js"></script>
   </body>
 </html>

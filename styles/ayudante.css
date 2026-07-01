@@ -1,0 +1,66 @@
+.ayudante {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+.ayudante > div > p {
+  font-size: 2rem;
+  color: yellow;
+  text-shadow: 2px 2px 3px yellowgreen;
+  font-weight: bold;
+  animation: blink 2s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes blink {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.note {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  width: 500px;
+  height: 600px;
+  z-index: 40;
+  justify-content: center;
+}
+
+#tres-raya {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  cursor: pointer;
+  color: red;
+  font-size: 20px;
+}
+
+.game:hover {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 600px) {
+  .ayudante {
+    display: none;
+  }
+}

@@ -2,13 +2,19 @@ const language = [
   {
     subtitle: "Desarrollador Multiplataforma y Diseñador Web",
     sobre_mi_title: "Sobre Mi",
-    sobre_mi_text: `Me llamo Ruben y soy desarrollador de software con interes en los juegos y en Android <br>
-          <br>
-          Tengo el titulo de Sistemas Microinformaticos y Redes en el IES Monte da vila y tengo tambien el titulo de Desarrollo de Aplicaciones Multiplataforma en IES Chan do Monte. Ahora mismo, estoy en un curso de Diseño Web para reciclarme y volver al diseño de moviles con mas fuerza. <br>
-          <br>
-          En mi tiempo libre, me gusta hacer deporte, jugar videojuegos y aprender cosas nuevas. <br>
-          <br>
-          Si quieres saber mas sobre mi, puedes mirar mi CV.`,
+    sobre_mi_text: `Me llamo Ruben y soy desarrollador de software con interés en los
+          juegos y en Android <br />
+          <br />
+          Tengo el titulo de Sistemas Microinformaticos y Redes en el IES Monte
+          da vila y tengo tambien el titulo de Desarrollo de Aplicaciones
+          Multiplataforma en IES Chan do Monte. Ahora mismo, estoy en un curso
+          de Diseño Web para reciclarse y volver al diseño de móviles con mas
+          fuerza. <br />
+          <br />
+          En mi tiempo libre, me gusta jugar videojuegos y ajedrez y aprender
+          cosas nuevas para aplicarlas al trabajo. <br />
+          <br />
+          Si quieres saber más sobre mi, puedes mirar mi CV`,
     skills_title: "Habilidades",
     projects_title: "Proyectos",
     contact_title: "Contacto",
@@ -31,6 +37,8 @@ If you'd like to know more about me, you can view my CV.
     contact_title: "Contact",
   },
 ];
+
+
 
 
 const lang = document.getElementById('lang');
