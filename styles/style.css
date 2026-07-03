@@ -155,6 +155,16 @@ a:hover {
   gap: 20px;
 }
 
+.container--proj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  height: 600px;
+  overflow-y: scroll;
+}
+
 .contact__container {
   display: flex;
   align-items: center;
